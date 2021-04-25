@@ -1,13 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
+//import App from './App';//
+import Movie from './movie';
+import ReviewList from './review-list';
+//import Review from './review';
 import reportWebVitals from './reportWebVitals';
 
+function Header() {
+  return <h1 className="text-center">Unconventional Christmas Movie Face-off</h1>
+}
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <div>
+    <Header />
+    <Movie />
+    <br />
+    <ReviewList />
+  </div>
+,
   document.getElementById('root')
 );
 
